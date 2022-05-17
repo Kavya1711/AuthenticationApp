@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        input{
+            background-color: rgb(223, 233, 240);
+        }
+        button{
+            background-color: rgb(36, 34, 34);
+            color: red;
+        }
+        button:hover{
+            background-color: black;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>EMPLOYEE DETAILS</h2>
+        <form target="_blank" >
+            Id_____<input type="text" id="id1"><br><br>
+            Name__<input type="text" id="name1"><br><br>
+            Branch_<input type="text" id="branch1"><br><br>
+            Salary__<input type="text" id="salary1"><br><br>
+            <button type="button" onclick="fetchData()">FETCH</button>
+            <button type="button" onclick="addData()">ADD</button>
+            <button type="button" onclick="updateData()">UPDATE</button>
+            <button type="button" onclick="deleteAllData()">DELETE ENTIRE TABLE</button>
+            <br><br>
+            <button type="button" onclick="readData()">READ DATA</button>
+            <!-- <button type="button" id="myButton" onclick="readData()">READ DATA</button> -->
+
+            
+        </form>
+        <div id="result"></div>
+    </center>
+    <!-- <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "./next.html";
+        };
+    </script> -->
+    <script src="./script.js"></script>
+    <script src="./readData.js"></script>
+</body>
+</html>
